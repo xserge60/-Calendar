@@ -1,0 +1,13 @@
+##Calendar_back.txt --предварительная загрузка текста
+            <TABLE class=list CELLPADDING=4 CELLSPACING=0 border=1>
+                <TR>
+                    <TD WIDTH=305 HEIGHT=80>
+                        <P ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif" size="-2"><I>##file</I></FONT></P>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD WIDTH=305 HEIGHT=800 ALIGN=left>
+                        <P LANG="uk-UA" ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif">##text</FONT></P>
+                    </TD>
+                </TR>
+            </TABLE ##endpage>

@@ -1,0 +1,53 @@
+##Calendar_page_top.csv --предварительная загрузка событий
+##Calendar_page_bottom.csv --предварительная загрузка событий
+            <TABLE class=list CELLPADDING=4 CELLSPACING=0 border=1>
+                <COL WIDTH=87>
+                <COL WIDTH=53>
+                <COL WIDTH=51>
+                <COL WIDTH=90>
+                <TR>
+                    <TD COLSPAN=4 WIDTH=305 HEIGHT=80>
+                        <P ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif" size="-2"><I>##file</I></FONT></P>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD COLSPAN=4 WIDTH=305 HEIGHT=80 ALIGN=CENTER>
+                        <P LANG="uk-UA" ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif">##easter##Calendar_page_top.csv</FONT></P>
+                    </TD>
+                </TR>
+                <TR VALIGN=BOTTOM>
+                    <TD COLSPAN=2 WIDTH=148 HEIGHT=33>
+                        <P STYLE="margin-left: 0.1cm"><FONT FACE="DejaVu Sans, sans-serif" SIZE=5 color="black"><B>##var_mes</B></FONT></FONT></P>
+                    </TD>
+                    <TD COLSPAN=2 WIDTH=148>
+                        <P ALIGN=RIGHT STYLE="margin-right: 0.1cm"><FONT FACE="DejaVu Sans, sans-serif" SIZE=5 color="black"><B>##var_god</B></FONT></FONT></P>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD WIDTH=87>
+                        <FONT FACE="DejaVu Sans, sans-serif" SIZE=2 color="OrangeRed"><b>&nbsp;&nbsp;&nbsp;Сонце</b></FONT><br>
+                        <FONT FACE="DejaVu Sans, sans-serif" SIZE=2>Схід &nbsp;&nbsp;##var_sun1</FONT><br>
+                        <FONT FACE="DejaVu Sans, sans-serif" SIZE=2>Захід ##var_sun2</FONT><br>
+                        <FONT FACE="DejaVu Sans, sans-serif" SIZE=2>Трив. ##var_sun3</FONT>
+                    </TD>
+                    <TD COLSPAN=2 WIDTH=112>
+                        <P ALIGN=CENTER><FONT FACE="DejaVu Sans, sans-serif" SIZE=7 STYLE="font-size: 55pt" color="##var_col"><B>##var_dat</B></FONT></P>
+                    </TD>
+                    <TD WIDTH=90 align=center>
+                        <FONT FACE="DejaVu Sans, sans-serif" SIZE=2 color="RoyalBlue"><b>&nbsp;&nbsp;Місяць</b></FONT><br>
+			<img src="img\luna_##var_luna.png" width=50>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD COLSPAN=4 WIDTH=305>
+                        <P LANG="uk-UA" ALIGN=CENTER><FONT FACE="DejaVu Sans, sans-serif" SIZE=6 STYLE="font-size: 26pt" color="##var_col"><B>##var_day</B></FONT></P>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD COLSPAN=4 WIDTH=305 HEIGHT=134 ALIGN=CENTER valign=middle>
+                        <P class="pline" LANG="uk-UA" ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif">
+				##prof##Calendar_page_bottom.csv
+			</FONT></P>
+                    </TD>
+                </TR>
+            </TABLE ##endpage>
