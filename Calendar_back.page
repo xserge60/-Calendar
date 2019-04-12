@@ -1,13 +1,15 @@
-##Calendar_back.txt --предварительная загрузка текста
-            <TABLE class=list CELLPADDING=4 CELLSPACING=0 border=1>
+##Calendar_back.csv --предварительная загрузка текста
+            <TABLE class=list CELLPADDING=5 CELLSPACING=0 border=0>
                 <TR>
-                    <TD WIDTH=305 HEIGHT=80>
-                        <P ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif" size="-2"><I>##file</I></FONT></P>
+                    <TD WIDTH=350 HEIGHT=##high ALIGN=left valign=bottom>
+                        <P LANG="uk-UA" ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif" size=-1>
+                        ##Calendar_back.csv
+                        </FONT></P>
                     </TD>
                 </TR>
                 <TR>
-                    <TD WIDTH=305 HEIGHT=800 ALIGN=left>
-                        <P LANG="uk-UA" ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif">##text</FONT></P>
+                    <TD WIDTH=350 HEIGHT=80>
+                        <P ALIGN=CENTER valign=bottom><FONT FACE="Albertus Extra Bold, sans-serif" size="-2"><I>##file</I></FONT></P>
                     </TD>
                 </TR>
             </TABLE ##endpage>

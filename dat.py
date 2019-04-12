@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 import datetime
@@ -12,7 +12,7 @@ import logging
 import winsound
 duration = 100  # millisecond
 freq = 440  # Hz
-winsound.Beep(freq, duration) 
+winsound.Beep(freq, duration)
 
 #print (help(logging.basicConfig))
 logging.basicConfig(format = u'%(levelname)-8s [%(asctime)s] %(message)s', level = logging.DEBUG, filename = u'Calendar.log')
@@ -42,18 +42,18 @@ def ConfigSectionMap(section):
             print("exception on %s!" % option)
             dict1[option] = None
     return dict1
-    
+
 def dlit(l):
     return str(((int(l[1].split(':')[0])*60+int(l[1].split(':')[1])) - (int(l[0].split(':')[0])*60+int(l[0].split(':')[1])))//60) + ':' +  str(((int(l[1].split(':')[0])*60+int(l[1].split(':')[1])) - (int(l[0].split(':')[0])*60+int(l[0].split(':')[1]))) % 60)
 
 # вычисление фазы луны по дате
 def luna(dat):
-    # Продолжительность синодического месяца в среднем составляет 29,53059 суток. 
+    # Продолжительность синодического месяца в среднем составляет 29,53059 суток.
     # 2.01.2018 5:25 - полнолуние
     # 1.10.2016 2:12 - новолуние
     d = round((int(str(dat - datetime.date(2016, 10, 1)).split(' ')[0]) % 29.53059 - ( 29.53059 / 16)) / ( 29.53059 / 8) )
     return d
-    
+
 print(sys.version)
 v_god = 2017
 v_mes = ('Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень')
@@ -61,6 +61,7 @@ v_day = ('понеділок', 'вівторок', 'середа', 'четвер
 v_text = 'This is a text'
 v_dat = datetime.date(v_god, 1, 1)
 v_dat = datetime.date.today()
+print("Сейчас", str(time.strftime('%d.%m.%Y %H:%M:%S')))
 dict1 = {v_dat:22, v_dat + datetime.timedelta(days=1):12}
 dict1[v_dat] += 100
 print(dict1)

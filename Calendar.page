@@ -1,6 +1,6 @@
 ##Calendar_page_top.csv --предварительная загрузка событий
 ##Calendar_page_bottom.csv --предварительная загрузка событий
-            <TABLE class=list CELLPADDING=4 CELLSPACING=0 border=1>
+            <TABLE class=list CELLPADDING=1 CELLSPACING=0 border=0>
                 <COL WIDTH=87>
                 <COL WIDTH=53>
                 <COL WIDTH=51>
@@ -11,7 +11,7 @@
                     </TD>
                 </TR>
                 <TR>
-                    <TD COLSPAN=4 WIDTH=305 HEIGHT=80 ALIGN=CENTER>
+                    <TD COLSPAN=4 WIDTH=305 HEIGHT=80 ALIGN=CENTER valign=middle>
                         <P LANG="uk-UA" ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif">##easter##Calendar_page_top.csv</FONT></P>
                     </TD>
                 </TR>
@@ -35,7 +35,7 @@
                     </TD>
                     <TD WIDTH=90 align=center>
                         <FONT FACE="DejaVu Sans, sans-serif" SIZE=2 color="RoyalBlue"><b>&nbsp;&nbsp;Місяць</b></FONT><br>
-			<img src="img\luna_##var_luna.png" width=50>
+                        <img src="img\luna_##var_luna.png" width=50>
                     </TD>
                 </TR>
                 <TR>
@@ -46,8 +46,8 @@
                 <TR>
                     <TD COLSPAN=4 WIDTH=305 HEIGHT=134 ALIGN=CENTER valign=middle>
                         <P class="pline" LANG="uk-UA" ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif">
-				##prof##Calendar_page_bottom.csv
-			</FONT></P>
+                                ##prof##Calendar_page_bottom.csv
+                        </FONT></P>
                     </TD>
                 </TR>
             </TABLE ##endpage>
