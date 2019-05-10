@@ -1,6 +1,6 @@
 ##Calendar_page_top.csv --предварительная загрузка событий
 ##Calendar_page_bottom.csv --предварительная загрузка событий
-            <TABLE class=list CELLPADDING=1 CELLSPACING=0 border=0>
+            <TABLE id='##id' class=list CELLPADDING=1 CELLSPACING=0 border=0>
                 <COL WIDTH=87>
                 <COL WIDTH=53>
                 <COL WIDTH=51>

@@ -8,7 +8,7 @@ import sys
 from color_output import print
 print('Python version #15 '+sys.version.split(' ')[0])
 v_debug = True  # поставить False при окончательной печати для резки
-v_pages = 365//4+1  #  28//4 # 
+v_pages = 365//4+1  #  28//4 #
 #from ctypes import *
 import datetime
 import configparser
@@ -243,6 +243,8 @@ for v_paper in range(v_pages):  #при окончательной печати 
             line = line.replace('##var_col','red')
         else:
             line = line.replace('##var_col','black')
+        if line.find('##id')>=0:
+            line = line.replace('##id',str(v_dat))
         if line.find('##file')>=0:
             line = line.replace('##file',str(v_paper)+'-'+str(v_page)+' '+str(v_dat))+'<br>.......................................................................<br>'
             v_page +=1
@@ -402,6 +404,9 @@ for v_paper in range(v_pages):  #при окончательной печати 
         var_mes = list_mes[int(v_dat.strftime("%m"))-1]
         var_mesnom = int(v_dat.strftime("%m"))
         var_god = str(int(v_dat.strftime("%Y")))
+
+        if line.find('##id')>=0:
+            line = line.replace('##id',str(v_dat))
 
         if line.find('##file')>=0:
             line = '<font color=white>....................................................................</font><br>'+line.replace('##file',str(v_paper)+'-'+str(v_page)+' '+str(v_dat))
