@@ -1,9 +1,0 @@
-*.pyc
-*.bak
-test*.*
-*~
-__pycache__
-source
-db.sqlite3
-/static
-.DS_Store

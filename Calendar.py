@@ -350,7 +350,7 @@ f_result = codecs.open('Calendar_'+str(v_god)+'_back.html', 'w','utf-8')
 f_page = codecs.open('Calendar_back.txt', 'r', 'utf-8')
 for line in f_html:
     line = line.replace('##var_god',str(v_god))
-    line = line.replace('##title','(обратная сторона)')
+    line = line.replace('##title',' (обратная сторона)')
     line = line.replace('##bcolor','white')
     if line[0:6] == '##loop':
         print('File #15 Calendar_'+str(v_god)+'_back.html #7 started.')

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0 Transitional//EN">
 <HTML>
   <HEAD>
     <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
@@ -33,7 +33,7 @@
                         <P ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif" size="-2"><I>0-0 2018-01-01</I></FONT></P>
 <br>.......................................................................<br>                    </TD>
                 </TR>
-                <TR>
+                <TR id="20180101">
                     <TD COLSPAN=4 WIDTH=305 HEIGHT=80 ALIGN=CENTER valign=middle>
 <font color=red><b><i>Показания счетчиков</i></b></font><br>
                         <P LANG="uk-UA" ALIGN=CENTER><FONT FACE="Albertus Extra Bold, sans-serif"></FONT></P>
@@ -55,7 +55,7 @@
                         <FONT FACE="DejaVu Sans, sans-serif" SIZE=2>Трив. 8:23</FONT>
                     </TD>
                     <TD COLSPAN=2 WIDTH=112>
-                        <P ALIGN=CENTER><FONT FACE="DejaVu Sans, sans-serif" SIZE=7 STYLE="font-size: 55pt" color="red"><B>1</B></FONT></P>
+                        <P ALIGN=CENTER><FONT FACE="DejaVu Sans, sans-serif" SIZE=7 STYLE="font-size: 55pt" color="red"><B><a href="#list20180521">1</a></B></FONT></P>
                     </TD>
                     <TD WIDTH=90 align=center>
                         <FONT FACE="DejaVu Sans, sans-serif" SIZE=2 color="RoyalBlue"><b>&nbsp;&nbsp;Місяць</b></FONT><br>
@@ -8446,7 +8446,7 @@ Iменини <font color=red>Ірина</font><br>
       <tr>
         <td>
 
-            <TABLE class=list CELLPADDING=1 CELLSPACING=0 border=0>
+            <TABLE id = "list20180521" class=list CELLPADDING=1 CELLSPACING=0 border=0>
                 <COL WIDTH=87>
                 <COL WIDTH=53>
                 <COL WIDTH=51>
@@ -22401,5 +22401,9 @@ Iменини <font color=red>Левко</font><br>
         </td>
       </tr>
     </table>
+    <script>
+        let tag = 1; /*document.getElementById ('2018-05-21').scrollintoView (true); */
+        console.log(tag);
+    </script>
   </BODY>
 </HTML>
